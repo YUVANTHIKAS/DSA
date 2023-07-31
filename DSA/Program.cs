@@ -54,9 +54,24 @@ namespace DataStucturesAlgorithm
                         PrimeAnagramPalindrome primeAnagramPalindrome = new PrimeAnagramPalindrome();
                         primeAnagramPalindrome.CheckPrimeAnagramPalindrome();
                         break;
+                      case 7:
+                        MergeSort mergeSort = new MergeSort();
+                        Console.WriteLine("Enter the limit:");
+                        int n1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the strings:");
+                        string[] ar1 = new string[n1];
+                        for (int i = 0; i < n1; i++)
+                        {
+                            ar1[i] = Console.ReadLine();
+                        }
+                        mergeSort.SortByMerge(ar1);
+                        Console.WriteLine("\nSorted Array:");
+                        mergeSort.PrintArray(ar1);
+                        break;
 
 
-                    case 7:
+
+                    case 8:
                         flag = false;
                         break;
                 }
