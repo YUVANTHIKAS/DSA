@@ -45,9 +45,14 @@ namespace DataStucturesAlgorithm
                         BubbleSort bubbleSort = new BubbleSort();
                         bubbleSort.SortingBubble();
                         break;
+                     case 5:
+                        PrimeNumbers primeNumber = new PrimeNumbers();
+                        Console.WriteLine("\nEnter a number :");
+                        primeNumber.CheckPrime();
+                        break;
 
 
-                    case 5:
+                    case 6:
                         flag = false;
                         break;
                 }
