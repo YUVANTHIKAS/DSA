@@ -1,5 +1,6 @@
 ﻿
 
+using DSA;
 using System;
 using System.Security.Cryptography.X509Certificates;
 
@@ -23,6 +24,11 @@ namespace DataStucturesAlgorithm
                         search.ReadTextFileAndSearch(searchFilePath);
                         break;
                     case 2:
+                        ReplaceString replaceString = new ReplaceString();
+                        replaceString.StringReplace();
+                        break;
+
+                    case 3:
                         flag = false;
                         break;
                 }
