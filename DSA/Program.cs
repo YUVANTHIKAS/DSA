@@ -27,8 +27,23 @@ namespace DataStucturesAlgorithm
                         ReplaceString replaceString = new ReplaceString();
                         replaceString.StringReplace();
                         break;
-
                     case 3:
+                        InsertionSort insertionsort = new InsertionSort();
+                        Console.WriteLine("Enter limitation:");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter strings:");
+                        string[] a = new string[n];
+                        for (int i = 0; i < n; i++)
+                        {
+                            a[i] = Console.ReadLine();
+                        }
+                        insertionsort.InsertionSorting(a);
+                        Console.WriteLine("Array is sorted using insertion sort:");
+                        insertionsort.Display(a);
+                        break;
+
+
+                    case 4:
                         flag = false;
                         break;
                 }
