@@ -41,9 +41,13 @@ namespace DataStucturesAlgorithm
                         Console.WriteLine("Array is sorted using insertion sort:");
                         insertionsort.Display(a);
                         break;
-
-
                     case 4:
+                        BubbleSort bubbleSort = new BubbleSort();
+                        bubbleSort.SortingBubble();
+                        break;
+
+
+                    case 5:
                         flag = false;
                         break;
                 }
