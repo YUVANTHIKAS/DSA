@@ -50,9 +50,13 @@ namespace DataStucturesAlgorithm
                         Console.WriteLine("\nEnter a number :");
                         primeNumber.CheckPrime();
                         break;
+                      case 6:
+                        PrimeAnagramPalindrome primeAnagramPalindrome = new PrimeAnagramPalindrome();
+                        primeAnagramPalindrome.CheckPrimeAnagramPalindrome();
+                        break;
 
 
-                    case 6:
+                    case 7:
                         flag = false;
                         break;
                 }
